@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	l "github.com/SantetAlami/go-conf-loader"
+	"github.com/SantetAlami/gonf"
 )
 
 type Config struct {
@@ -16,7 +16,7 @@ type Config struct {
 
 func main() {
 	conf := Config{}
-	if err := l.Load(&conf, "cmd/configs/config.yaml", ""); err != nil {
+	if err := gonf.Load(&conf, "cmd/configs/config.yaml", ""); err != nil {
 		log.Panic(err)
 	}
 	fmt.Println(conf.Db.User)

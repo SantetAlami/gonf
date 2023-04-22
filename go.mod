@@ -1,4 +1,4 @@
-module github.com/SantetAlami/go-conf-loader
+module github.com/SantetAlami/gonf
 
 go 1.18
 

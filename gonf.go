@@ -1,4 +1,4 @@
-package loader
+package gonf
 
 import (
 	"io/ioutil"
